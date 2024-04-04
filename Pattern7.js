@@ -1,0 +1,19 @@
+function printpattern(r){
+
+    for (let i = 1; i <= r; i++) {
+        let row = ''
+        for(let j = 1; j<=r; j++){
+        if(i==1 || i==r || j==1 || j==r){
+            row+="* "
+        }
+        else{
+            row+="  "
+        }
+    }
+    console.log(row)
+}
+}
+
+const r = 5;
+
+printpattern(r);
